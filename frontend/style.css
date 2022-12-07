@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* ------ End of reset CSS ------ */
+
+body {
+    font-family: 'Poiret One', cursive;
+
+    background-color: #df8879;
+}
+
+.card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 356px;
+    height: 530px;
+
+    box-sizing: content-box;
+    border: 3px solid #E5E5E5;
+    border-radius: 35px;
+
+    background-color: #fff;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+#favourite {
+    position: absolute;
+
+    top: 4%;
+    left: 83%;
+
+    color: #bcbbbb;
+    font-size: 30px;
+}
+
+.change {
+    color: #e74f34;
+}
+
+.weather-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    height: 325px;
+}
+
+.weather-section>img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+}
+
+h1 {
+    font-size: 70px;
+    align-self: center;
+    letter-spacing: 1.2px;
+    padding-bottom: 22px;
+}
+
+.hl {
+    width: 306px;
+    height: 1px;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#wind-humidity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    letter-spacing: 1.2px;
+}
+
+#wind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wind i {
+    opacity: .2;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#wind p {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#humidity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#humidity img {
+    width: 20px;
+    height: 20px;
+    opacity: .2;
+    margin-right: 5px;
+}
+
+#humidity p {
+    display: inline;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.actual-city {
+    width: 356px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    bottom: 26%;
+    background-color: #000;
+}
+
+.name-city {
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+
+    overflow: hidden;
+}
+
+/* Bottom green section */
+
+.more-details {
+    position: absolute;
+    bottom: 0;
+    background-color: #33C55C;
+    padding: 32px 23px 0;
+
+    border-radius: 0 0 32px 32px;
+}
+
+#location-input {
+    width: 310px;
+    height: 54px;
+
+    border-radius: 0 0 12px 12px;
+
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+#location-input:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+}
+
+#location-input input {
+    width: 259px;
+    height: 54px;
+
+    padding: 0 19px;
+
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+}
+
+::placeholder {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+}
+
+#submit {
+    width: 51px;
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 0 12px 0;
+}
+
+.vl {
+    width: 1px;
+    height: 34px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-magnifying-glass {
+    width: 51px;
+    height: 34px;
+
+    margin-top: 14px;
+
+    font-size: 22px;
+    text-align: center;
+
+    opacity: .5;
+}
+
+.fa-magnifying-glass:hover {
+    opacity: 1;
+}
+
+.time {
+    width: 100%;
+
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Krub', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 17px;
+
+    color: #fff;
+
+}
+
+.fa-angle-down {
+    font-size: 30px;
+    color: #fff;
+}
+
+.fa-angle-down:hover {
+    filter: drop-shadow(0 0px 8px rgba(255, 255, 255, 1));
+}
